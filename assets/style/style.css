@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+    float: right;
+}
+
+li{
+    float: left;
+    margin: 0 10px;
+}
+
+.menu_hamburguer, .menu_x_desativado{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 780px){
+    .navbar{
+        display: none;
+    }
+
+    .navbar_ativa{
+        display: inline;
+    }
+
+    ul{
+        float: none;
+        padding: 0;
+        margin-top: 0px;
+    }
+
+    li{
+        margin: 10px 0;
+    }
+
+    li{
+        float: none;
+    }
+
+    .menu_hamburguer{
+        display: inline;
+        cursor: pointer;
+    }
+
+    .menu_hamburguer_desativado{
+        display: none;
+    }
+
+    .menu_x_ativado{
+        display: inline;
+        cursor: pointer;
+    }
+
+}
